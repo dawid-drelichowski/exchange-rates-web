@@ -1,0 +1,56 @@
+{
+  "name": "exchange-rates-web",
+  "version": "0.0.1",
+  "description": "Exchange rates web page",
+  "license": "MIT",
+  "author": {
+    "name": "Dawid Drelichowski"
+  },
+  "homepage": "https://github.com/dawid-drelichowski/exchange-rates-mobile",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dawid-drelichowski/exchange-rates-web.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dawid-drelichowski/exchange-rates-web/issues"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "build": "ember build",
+    "start": "ember serve",
+    "test": "ember test"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "broccoli-asset-rev": "^2.4.5",
+    "ember-ajax": "^3.0.0",
+    "ember-cli": "~2.17.1",
+    "ember-cli-app-version": "^3.0.0",
+    "ember-cli-babel": "^6.6.0",
+    "ember-cli-dependency-checker": "^2.0.0",
+    "ember-cli-eslint": "^4.2.1",
+    "ember-cli-htmlbars": "^2.0.1",
+    "ember-cli-htmlbars-inline-precompile": "^1.0.0",
+    "ember-cli-inject-live-reload": "^1.4.1",
+    "ember-cli-mirage": "^0.4.1",
+    "ember-cli-qunit": "^4.1.1",
+    "ember-cli-shims": "^1.2.0",
+    "ember-cli-sri": "^2.1.0",
+    "ember-cli-uglify": "^2.0.0",
+    "ember-data": "~2.17.0",
+    "ember-export-application-global": "^2.0.0",
+    "ember-g-map": "^0.0.25",
+    "ember-load-initializers": "^1.0.0",
+    "ember-maybe-import-regenerator-for-testing": "^1.0.0",
+    "ember-native-dom-helpers": "^0.5.10",
+    "ember-resolver": "^4.0.0",
+    "ember-source": "~2.17.0",
+    "emberfire": "^2.0.8",
+    "loader.js": "^4.2.3"
+  },
+  "engines": {
+    "node": "^4.5 || 6.* || >= 7.*"
+  }
+}

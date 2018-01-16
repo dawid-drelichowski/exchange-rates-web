@@ -1,0 +1,12 @@
+{{#if map}}
+  {{#g-map lat=map.latitude lng=map.longitude zoom=15 as |mapContext|}}
+    {{#g-map-marker mapContext lat=map.latitude lng=map.longitude as |markerContext|}}
+      {{#g-map-infowindow markerContext openOn="click" closeOn="click"}}
+        <p>{{map.title}}</p>
+        <p>{{map.description}}</p>
+      {{/g-map-infowindow}}
+    {{/g-map-marker}}
+  {{/g-map}}
+{{else}}
+  {{yield}}
+{{/if}}

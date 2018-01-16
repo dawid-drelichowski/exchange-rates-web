@@ -1,0 +1,17 @@
+{{#if rates}}
+  <form>
+    <select id="rates-calculator-currency" onChange={{action 'setCurrency' value='target.value'}}>
+      {{#each rates as |rate|}}
+        <option value="{{rate.currency}}">{{rate.country}}</option>
+      {{/each}}
+    </select>
+    <select id="rates-calculator-transaction" onChange={{action 'setTransaction' value='target.value'}}>
+      <option value="purchase">Purchase</option>
+      <option value="sale">Sale</option>
+    </select>
+    {{input type="number" min=0 value=calculator.amount key-up=(action 'setAmount')}}
+  </form>
+  <p>{{get this 'result'}}</p>
+{{else}}
+  {{yield}}
+{{/if}}
