@@ -2,7 +2,7 @@
 'use strict'
 
 module.exports = function(environment) {
-  let ENV = {
+  const ENV = {
     modulePrefix: 'exchange-rates-web',
     environment,
     rootURL: '/',
@@ -42,9 +42,6 @@ module.exports = function(environment) {
   }
 
   if (environment === 'test') {
-    ENV['ember-cli-mirage'] = {
-      enabled: true
-    }
     // Testem prefers this...
     ENV.locationType = 'none'
 

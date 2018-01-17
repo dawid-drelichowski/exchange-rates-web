@@ -1,12 +1,28 @@
 import {test} from 'qunit'
-import moduleForAcceptance from 'exchange-rates-web/tests/helpers/module-for-acceptance'
+import moduleForAcceptance from '../helpers/module-for-acceptance'
+import rates from '../fixtures/rates'
 
-moduleForAcceptance('Acceptance | rates')
+moduleForAcceptance('Acceptance | rates', {
+  beforeEach() {
+    setUpFixtures({rates})
+  }
+})
 
-test('visiting /', function(assert) {
-  visit('/')
+test('should render rates', (assert) => {
+  const url = '/'
 
-  andThen(function() {
-    assert.equal(currentURL(), '/')
+  visit(url)
+  andThen(() => {
+    const rate = rates[0],
+      $rates = find('tbody tr'),
+      rateAsText = $rates.first().text()
+
+    assert.expect(6)
+    assert.strictEqual(currentURL(), url)
+    assert.strictEqual($rates.length, 3)
+    assert.ok(rateAsText.includes(rate.country))
+    assert.ok(rateAsText.includes(rate.currency))
+    assert.ok(rateAsText.includes(rate.purchase))
+    assert.ok(rateAsText.includes(rate.sale))
   })
 })

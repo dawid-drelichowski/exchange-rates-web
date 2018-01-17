@@ -1,5 +1,5 @@
 import {moduleForModel, test} from 'ember-qunit'
-import maps from 'exchange-rates-web/mirage/fixtures/maps'
+import maps from '../../fixtures/maps'
 
 moduleForModel('map', 'Unit | Serializer | map', {
   needs: ['serializer:map', 'model:office']

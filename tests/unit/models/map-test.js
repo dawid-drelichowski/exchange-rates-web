@@ -1,6 +1,6 @@
 import {moduleForModel, test} from 'ember-qunit'
-import {get} from "@ember/object"
-import maps from 'exchange-rates-web/mirage/fixtures/maps'
+import {get} from '@ember/object'
+import maps from '../../fixtures/maps'
 
 moduleForModel('map', 'Unit | Model | map', {
   needs: ['model:office']

@@ -1,6 +1,6 @@
 import {moduleFor, test} from 'ember-qunit'
-import makeObjectsArray from 'exchange-rates-web/tests/helpers/make-objects-array'
-import rates from 'exchange-rates-web/mirage/fixtures/rates'
+import makeObjectsArray from '../../helpers/make-objects-array'
+import rates from '../../fixtures/rates'
 
 moduleFor('service:rates-calculator', 'Unit | Service | rates calculator', {})
 

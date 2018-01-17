@@ -1,5 +1,5 @@
 import {moduleForModel, test} from 'ember-qunit'
-import rates from 'exchange-rates-web/mirage/fixtures/rates'
+import rates from '../../fixtures/rates'
 
 moduleForModel('rate', 'Unit | Model | rate')
 

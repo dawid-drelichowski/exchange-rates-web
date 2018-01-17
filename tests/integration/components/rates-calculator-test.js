@@ -1,8 +1,8 @@
 import {moduleForComponent, test} from 'ember-qunit'
 import {fillIn} from 'ember-native-dom-helpers'
 import hbs from 'htmlbars-inline-precompile'
-import makeObjectsArray from 'exchange-rates-web/tests/helpers/make-objects-array'
-import rates from 'exchange-rates-web/mirage/fixtures/rates'
+import makeObjectsArray from '../../helpers/make-objects-array'
+import rates from '../../fixtures/rates'
 
 moduleForComponent('rates-calculator', 'Integration | Component | rates calculator', {
   integration: true

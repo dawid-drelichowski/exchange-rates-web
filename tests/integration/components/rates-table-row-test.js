@@ -1,6 +1,6 @@
 import {moduleForComponent, test} from 'ember-qunit'
 import hbs from 'htmlbars-inline-precompile'
-import rates from 'exchange-rates-web/mirage/fixtures/rates'
+import rates from '../../fixtures/rates'
 
 moduleForComponent('rates-table-row', 'Integration | Component | rates table row', {
   integration: true

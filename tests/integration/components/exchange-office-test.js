@@ -1,6 +1,6 @@
 import {moduleForComponent, test} from 'ember-qunit'
 import hbs from 'htmlbars-inline-precompile'
-import offices from 'exchange-rates-web/mirage/fixtures/offices'
+import offices from '../../fixtures/offices'
 
 moduleForComponent('exchange-office', 'Integration | Component | exchange office', {
   integration: true
@@ -23,12 +23,11 @@ test('should render child components when child components and no properties pas
 
 test("should render exchange-office when office property passed", function(assert) {
   const office = offices[0]
-  let text
   
   this.set('office', office)
   this.render(hbs`{{exchange-office office=office}}`)
 
-  text = this.$().text().trim()
+  const text = this.$().text().trim()
 
   assert.expect(4)
   assert.ok(text.includes(office.name))

@@ -1,9 +1,8 @@
 {{#if office}}
-  <p>{{office.title}}</p>
+  <strong>{{office.name}}</strong>
   {{#with office.map as |map|}}
     {{exchange-office-map map=map}}
   {{/with}}
-  <p>{{office.name}}</p>
   <p>{{office.street}}</p>
   <p>{{office.city}}</p>
   <p>{{office.phoneNumber}}</p>
