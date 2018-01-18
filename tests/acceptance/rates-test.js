@@ -8,7 +8,7 @@ moduleForAcceptance('Acceptance | rates', {
   }
 })
 
-test('should render rates', (assert) => {
+test('should render rates', function(assert) {
   const url = '/'
 
   visit(url)

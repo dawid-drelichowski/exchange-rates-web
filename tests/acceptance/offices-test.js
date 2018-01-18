@@ -13,7 +13,7 @@ moduleForAcceptance('Acceptance | offices', {
   }
 })
 
-test('should render offices with maps', (assert) => {
+test('should render offices with maps', function(assert) {
   const url = '/offices'
 
   visit(url)
