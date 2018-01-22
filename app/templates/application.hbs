@@ -1,2 +1,17 @@
-{{#link-to 'index'}}Rates{{/link-to}} {{#link-to 'offices'}}Offices{{/link-to}} {{#link-to 'calculator'}}Calculator{{/link-to}}
-{{outlet}}
+<div class="row">
+  <header class="col">
+    <h1>Exchange rates</h1>
+    <nav>
+      <ul class="nav nav-tabs">
+        <li class="nav-item">{{#link-to 'index' class='nav-link'}}Rates{{/link-to}}</li>
+        <li class="nav-item">{{#link-to 'offices' class='nav-link'}}Offices{{/link-to}}</li>
+        <li class="nav-item">{{#link-to 'calculator' class='nav-link'}}Calculator{{/link-to}}</li>
+      </ul>
+    </nav>
+  </header>
+</div>
+<div class="row">
+  <div class="col">
+    {{outlet}}
+  </div>
+</div>
